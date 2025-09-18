@@ -1,42 +1,219 @@
+
+<!doctype html>
+<html lang="en">
 <head>
-		<!-- Head section: metadata, title, and CSS link -->
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>My Web Project - WEB ATELIER (UDIT)</title>
-		<meta name="description" content="A student web project for WEB ATELIER (UDIT) course" />
-		<link rel="stylesheet" href="assets/css/resources.css" />
-	</head>
-	
-	<body><header>Laura González Graphic Design Bilingual</header>
-<main>
-    <section> Classic Stylesheets and CSS Frameworks 
-<article>
-	<h3><a href="https://getbootstrap.com">Bootstrap</a></h3>
-	<figure>
-		<img src="Screenshot 2025-09-17 at 17.33.47.png" alt="Carousel implementation in Bootsrtap" width="640" height="360" />
-		<figcaption>Carousel implementation in Bootstrap</figcaption>
-	</figure>
-	<p>
-		<strong>Notes:</strong>
-		I find it both interesting and practical that you can easily add elements like carousels or dropdowns to a webpage simply by linking Bootstrap and inserting each of the component´s code snippets. This saves time and lets you focus on other aspects such as content.
-	
-		
+  <!-- Head section: metadata, title, and CSS link -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Web Project - WEB ATELIER (UDIT)</title>
+  <meta name="description" content="A student web project for WEB ATELIER (UDIT) course" />
+  <link rel="stylesheet" href="assets/css/resources.css" />
+</head>
 
-    </section>
-	 <section> UI Kits and Component Libraries 
-<article>
-	<h3><a href="https://tailwindcss.com/">TailwindCSS</a></h3>
-	<figure>
-		<img src="assets/img/tailwind-demo.png" alt="Tailwind demo screenshot" width="640" height="360" />
-		<figcaption>My screenshot of Tailwind demo</figcaption>
-	</figure>
-	<p>
-		<strong>Notes:</strong>
-		Utility classes make me faster, but HTML feels less semantic. Trade-off: speed vs. readability.
-	</p>
-	<iframe src="https://tailwindcss.com/" width="600" height="400" loading="lazy"></iframe>
-</article>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#content">Skip to content</a>
 
+  <header>
+    <h1>Laura González — Graphic Design (Bilingual)</h1>
+
+    <!-- NEW: Main navigation -->
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="#classic">Classic Stylesheets and CSS Frameworks</a></li>
+        <li><a href="#uikits">UI Kits and Component Libraries</a></li>
+        <li><a href="#static">Static Site Generators and Templates</a></li>
+        <li><a href="#animation">Animation and Visual Libraries</a></li>
+        <li><a href="#templates">Templates and Open UI Kits</a></li>
+        <li><a href="#data">Data and Media Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content">
+    <!-- SECTION 1 -->
+    <section id="classic" aria-labelledby="classic-title">
+      <h2 id="classic-title">Classic Stylesheets and CSS Frameworks</h2>
+
+      <article>
+        <h3><a href="https://getbootstrap.com">Bootstrap</a></h3>
+		<h1>Components</h1>
+        <figure>
+          <img src="Screenshot 2025-09-17 at 17.33.47.png"
+               alt="Carousel implementation in Bootstrap"
+               width="640" height="360" />
+			    <img src="Screenshot 2025-09-18 at 10.36.34.png"
+               alt="Carousel implementation with Bootstrap"
+               width="640" height="360" />
+          <figcaption>Carousel implementation with Bootstrap</figcaption>
+        </figure>
+        <p>
+          <strong>Notes:</strong>
+          I find it both interesting and practical that Boostrtaps allows you to easily add interactive elements
+          like carousels or dropdowns to a webpage by simply linking its CSS and JS files and
+          inserting each component’s code snippet. This saves time and lets you
+          focus on other aspects such as the content of your webpage.
+        </p>
+	<h1>Responsive Grid System</h1>
+      </article>
+<article>
+        <h3><a href="https://tailwindcss.com">TailwindCSS</a></h3>
+		<h1>Smaller CSS</h1>
+        <figure>
+          <img src="Screenshot 2025-09-18 at 10.53.49.png"
+               alt="Smaller CSS"
+               width="640" height="360" />
+			
+          <figcaption>Removing unnecesary CSS</figcaption>
+        </figure>
+        <p>
+          <strong>Notes:</strong>
+          I found it very curious how Tailwind automatically removes unnecesary CSS so it ships faster. I have struggled in the past with big CSS files that slow down the loading of my page so I find this tool particularly useful. 
+		  <strong>Downside:</strong> Unfortunately, the downside is that in order to make the CSS smaller, you need to use utility classes so the HTML which can end up making it too long and hard to read. However, I believe with a good organisation and differentiation, it can be handled. 
+        </p>
+	
+
+      </article>
+
+	  <article>
+        <h3>Comparison</h3>
+		<h1>My choice</h1>
+        
+          <strong>TailwindCSS</strong>
+
+         Personally, I like the freedom and flexibility that TailwindCSS offers. Whereas Bootstrap is ready-made and it might be better for corporate webs in a more serious or generic context, I believe as a designer I would want to be more creative and stand out with a customised webpage. 
+        </p>
+
+	  </article>
+
+	  
+
+	  
     </section>
-</main>
+
+
+    <!-- SECTION 2 -->
+    <section id="uikits" aria-labelledby="uikits-title">
+      <h2 id="uikits-title">UI Kits and Component Libraries</h2>
+
+      <article>
+        <h3><a href="https://tailwindcss.com/">Tailwind CSS</a></h3>
+        <figure>
+          <img src="assets/img/tailwind-demo.png"
+               alt="Tailwind CSS demo screenshot"
+               width="640" height="360" />
+          <figcaption>My screenshot of Tailwind demo</figcaption>
+        </figure>
+        <p>
+          <strong>Notes:</strong>
+          Utility classes make me faster, but HTML feels less semantic.
+          Trade-off: speed vs. readability.
+        </p>
+        <iframe src="https://tailwindcss.com/" width="600" height="400" loading="lazy"
+                title="Tailwind CSS website preview"></iframe>
+      </article>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section id="static" aria-labelledby="static-title">
+      <h2 id="static-title">Static Site Generators and Templates</h2>
+      <p>Examples: Jekyll, Hugo, Eleventy, Astro… (añade tus apuntes aquí).</p>
+    </section>
+
+    <!-- SECTION 4 -->
+    <section id="animation" aria-labelledby="animation-title">
+      <h2 id="animation-title">Animation and Visual Libraries</h2>
+      <p>Examples: GSAP, Framer Motion, Anime.js, Three.js, Lottie…</p>
+    </section>
+
+    <!-- SECTION 5 -->
+    <section id="templates" aria-labelledby="templates-title">
+      <h2 id="templates-title">Templates and Open UI Kits</h2>
+      <p>Ejemplos: shadcn/ui, daisyUI, Flowbite, Open Props, Primer, etc.</p>
+    </section>
+
+    <!-- SECTION 6 -->
+    <section id="data" aria-labelledby="data-title">
+      <h2 id="data-title">Data and Media Resources</h2>
+      <p>Recursos: Lorem Picsum, Unsplash, Pexels, Placeholder.com, JSONPlaceholder, Public APIs…</p>
+    </section>
+  </main>
+
+  <!-- (Opcional) pequeño CSS mínimo por si tu resources.css no define el menú) -->
+  <style>
+    .skip-link { position:absolute; left:-9999px; }
+    .skip-link:focus { left:1rem; top:1rem; background:#fff; padding:.5rem .75rem; border:1px solid #ccc; }
+    nav .nav { list-style:none; display:flex; flex-wrap:wrap; gap:.75rem; padding:0; margin:1rem 0; }
+    nav .nav a { text-decoration:none; padding:.5rem .75rem; border:1px solid var(--border, #e5e7eb); border-radius:8px; }
+    nav .nav a:focus, nav .nav a:hover { outline: none; box-shadow: var(--shadow, 0 8px 24px rgba(0,0,0,.06)); }
+
+    /* Remove previous hover zoom, add modal zoom effect */
+    img {
+      cursor: zoom-in;
+      transition: box-shadow 0.3s cubic-bezier(.4,2,.6,1);
+    }
+    img:active {
+      box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    }
+
+    /* Modal overlay for fullscreen image zoom */
+    .img-modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,0.85);
+      justify-content: center;
+      align-items: center;
+      cursor: zoom-out;
+    }
+    .img-modal.open {
+      display: flex;
+    }
+    .img-modal img {
+      max-width: 90vw;
+      max-height: 90vh;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.32);
+      border-radius: 12px;
+      background: #fff;
+      cursor: zoom-out;
+      transition: none;
+    }
+  </style>
+
+  <!-- Modal for fullscreen image zoom -->
+  <div class="img-modal" id="imgModal" tabindex="-1" aria-modal="true" role="dialog">
+    <img src="" alt="Zoomed image" id="modalImg" />
+  </div>
+
+  <script>
+    // Fullscreen image zoom modal logic
+    document.addEventListener('DOMContentLoaded', function() {
+      const modal = document.getElementById('imgModal');
+      const modalImg = document.getElementById('modalImg');
+      document.body.addEventListener('click', function(e) {
+        if (e.target.tagName === 'IMG' && e.target.closest('main')) {
+          modal.classList.add('open');
+          modalImg.src = e.target.src;
+          modalImg.alt = e.target.alt || '';
+          modal.focus();
+        }
+      });
+      modal.addEventListener('click', function() {
+        modal.classList.remove('open');
+        modalImg.src = '';
+      });
+      // ESC key closes modal
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('open')) {
+          modal.classList.remove('open');
+          modalImg.src = '';
+        }
+      });
+    });
+  </script>
 </body>
+</html>
