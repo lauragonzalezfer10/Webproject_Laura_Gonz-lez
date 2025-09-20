@@ -37,7 +37,7 @@
 
       <article>
         <h3><a href="https://getbootstrap.com">Bootstrap</a></h3>
-		<h1>Components</h1>
+		<h1>Prebuilt Components</h1>
         <figure>
           <img src="Screenshot 2025-09-17 at 17.33.47.png"
                alt="Carousel implementation in Bootstrap"
@@ -54,7 +54,7 @@
           inserting each component’s code snippet. This saves time and lets you
           focus on other aspects such as the content of your webpage.
         </p>
-	<h1>Responsive Grid System</h1>
+	
       </article>
 <article>
         <h3><a href="https://tailwindcss.com">TailwindCSS</a></h3>
@@ -68,7 +68,7 @@
         </figure>
         <p>
           <strong>Notes:</strong>
-          I found it very curious how Tailwind automatically removes unnecesary CSS so it ships faster. I have struggled in the past with big CSS files that slow down the loading of my page so I find this tool particularly useful. 
+          I found it very curious how Tailwind automatically removes unnecesary CSS so the webpage ships faster. I have struggled in the past with big CSS files that slow down the loading of my page so I find this tool particularly useful. 
 		  <strong>Downside:</strong> Unfortunately, the downside is that in order to make the CSS smaller, you need to use utility classes so the HTML which can end up making it too long and hard to read. However, I believe with a good organisation and differentiation, it can be handled. 
         </p>
 	
@@ -117,7 +117,41 @@
     <!-- SECTION 3 -->
     <section id="static" aria-labelledby="static-title">
       <h2 id="static-title">Static Site Generators and Templates</h2>
-      <p>Examples: Jekyll, Hugo, Eleventy, Astro… (añade tus apuntes aquí).</p>
+      <article>
+        <h3><a href="https://jekyllrb.com">Jekyll</a></h3>
+		<h1>Front Matter</h1>
+        <figure>
+          <img src="Screenshot 2025-09-19 at 09.12.56.png"
+               alt="Front Matter in Jekyll"
+               width="640" height="360" />
+			
+          <figcaption>Front Matter in Jekyll</figcaption>
+        </figure>
+        <p>
+          <strong>Notes:</strong>
+
+		  I learnt about front matter and the use of variables to manage metadata in Jekyll using YAML. This allows you to establish variables such as title or layout at the beggining of the site in order to use them across different pages. This ensures consistency and it saves time and space since you only need to change it once in the front matter instead of in every individual page.
+
+        </p>
+
+		<h1>Liquid Template Language</h1>
+<figure>
+          <img src="Screenshot 2025-09-19 at 09.27.21.png"
+               alt="Liquid template language in Jeqkyll"
+               width="640" height="360" />
+			
+          <figcaption>Liquid template language in Jekyll</figcaption>
+        </figure>
+		 
+        </figure>
+        <p>
+          <strong>Notes:</strong>
+
+          Something that caught my attention about Jekyll is that it uses its own template language called Liquid. This allows you to reuse certain components and elements across different pages of the site which keeps consistency and saves time. I like how it acts as a glue between content (Markdown) and metadata (YAML), placing them into HTML layouts. The result is a static site with dynamic content which I find very interesting and convenient. 
+        </p>
+	
+
+      </article>
     </section>
 
     <!-- SECTION 4 -->

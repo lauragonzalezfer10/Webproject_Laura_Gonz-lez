@@ -14,7 +14,51 @@ html {
 }
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+	font-family: 'Sora', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+/* Modern nav styles */
+.nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content: center;
+	padding: 0.5rem 0;
+	margin: 1rem 0 0 0;
+	list-style: none;
+	background: linear-gradient(90deg, rgba(14,165,233,0.13) 0%, rgba(236,72,153,0.13) 100%);
+	border-radius: 999px;
+	box-shadow: 0 2px 12px rgba(14,165,233,0.07);
+}
+.nav li {
+	margin: 0;
+}
+.nav a {
+	display: block;
+	padding: 0.5rem 1.25rem;
+	border-radius: 999px;
+	font-weight: 600;
+	color: #1f2937;
+	background: transparent;
+	transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+	text-decoration: none;
+	letter-spacing: 0.02em;
+	box-shadow: none;
+}
+.nav a:hover,
+.nav a:focus {
+	background: linear-gradient(90deg, #0ea5e9, #ec4899 80%);
+	color: #fff;
+	box-shadow: 0 2px 12px rgba(14,165,233,0.13);
+	outline: none;
+	text-decoration: none;
+}
+
+.subtitle {
+	color: #6b7280;
+	font-size: 1.1rem;
+	margin-bottom: 0.5rem;
+	font-weight: 400;
+	letter-spacing: 0.01em;
+}
 	color: #333;
 	background-color: #fff;
 	margin: 0;
