@@ -8,6 +8,7 @@
   <title>My Web Project - WEB ATELIER (UDIT)</title>
   <meta name="description" content="A student web project for WEB ATELIER (UDIT) course" />
   <link rel="stylesheet" href="assets/css/resources.css" />
+  <script defer src="assets/js/header-hide.js"></script>
 </head>
 
 <body>
@@ -15,10 +16,14 @@
   <a class="skip-link" href="#content">Skip to content</a>
 
   <header>
-    <h1>Laura González — Graphic Design (Bilingual)</h1>
-
-    <!-- NEW: Main navigation -->
-    <nav aria-label="Primary">
+    <div class="header-content">
+      <h1>Laura González</h1>
+      <div class="subtitle">Graphic Design (Bilingual)</div>
+      <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  <nav id="main-nav" aria-label="Primary">
       <ul class="nav">
         <li><a href="#classic">Classic Stylesheets and CSS Frameworks</a></li>
         <li><a href="#uikits">UI Kits and Component Libraries</a></li>
@@ -112,8 +117,50 @@
           <strong>Notes:</strong>
 		I find this UI kit very easy to implement as it includes ready-made templates. This is great for certain projects where efficiency and consistency are more important than creativity and originality.
 		
-		  <strong>Downside:</strong> The use of templates can be very useful to begin with, but it can end up looking too generic if you don´t customise it to fit your style and needs. This customisatio might take more time and the learning curve might be tougher.
+		  <strong>Downside:</strong> The use of templates can be very useful to begin with, but it can end up looking too generic if you don´t customise it to fit your style and needs. This customisation might take more time and the learning curve might be tougher so that´s something to consider.
         </p>
+	
+      </article>
+
+	   <article>
+        <h3><a href="https://mui.com/material-ui/getting-started/">Ark UI</a></h3>
+       <h1>Component catalog</h1>
+		
+		<figure>
+          <img src="Screenshot 2025-09-21 at 08.51.35 copy.png"
+               alt="List of components in Ark UI"
+               width="640" height="360" />
+          <figcaption>List of components in Ark UI</figcaption>
+        </figure>
+       <figure>
+          <img src="Screenshot 2025-09-21 at 08.51.56.png"
+               alt="Date picker"
+               width="640" height="360" />
+          <figcaption>Date picker</figcaption>
+        </figure>
+        <p>
+          <strong>Notes:</strong>
+		The amount of components that Ark UI offers is quite impressive and useful to incorporate in my projects. It includes basic components such as buttons to more complex ones such as carosuels, menus and even signature pads or date pickers. It has almost every component you would need for your site so i would highly consider incorporating them in my sites.
+		
+		
+        </p>
+
+		<h1>Headless</h1>
+		<figure>
+          <img src="Screenshot 2025-09-21 at 09.02.38.png"
+               alt="Headless component library"
+               width="640" height="360" />
+          <figcaption>Date picker</figcaption>
+        </figure>
+        <p>
+          <strong>Notes:</strong>
+		The fact that components do not have default styles allows you to customise them in order to fit your aesthetic which is really useful to build a design-centered and original website. Ark UI gives you the base and you can build up from there. It is also compatiple with many styling solutions such as TailwindCSS so using both would be an option to consider in future projects.
+		
+		
+        </p>
+
+
+		
 	
       </article>
     </section>
@@ -161,7 +208,71 @@
     <!-- SECTION 4 -->
     <section id="animation" aria-labelledby="animation-title">
       <h2 id="animation-title">Animation and Visual Libraries</h2>
-      <p>Examples: GSAP, Framer Motion, Anime.js, Three.js, Lottie…</p>
+    <article>
+	  <h3><a href="https://gsap.com">GSAP</a></h3>
+		<h1>ScrollTrigger</h1>
+        <figure>
+          <img src="Screenshot 2025-09-21 at 09.13.50.png"
+               alt="Scroll Trigger plugin in GSAP"
+               width="640" height="360" />
+			
+          <figcaption>Scroll Trigger plugin in GSAP</figcaption>
+        </figure>
+        <p>
+          <strong>Notes:</strong>
+
+		The depth of GSAP is quite outstanding. However, one of the features that cought my attention the most was the ScrollTrigger plugin. I imagine this can be really handy to create interactive and inmersive webpages that react to the user´s scrolling behaviour. A good example would be a portfolio which would more depth and dynamisms thanks to this plugin and would be more original and eye-catching to users. 
+
+        </p>
+
+		</article>
+<article>
+		<h3><a href="https://animejs.com">Anime.js</a></h3>
+		<h1>Lightweight & simple</h1>
+        <figure>
+          <img src="Screenshot 2025-09-19 at 09.12.56.png"
+               alt="Front Matter in Jekyll"
+               width="640" height="360" />
+			
+          <figcaption>Front Matter in Jekyll</figcaption>
+        </figure>
+        <p>
+          <strong>Notes:</strong>
+
+		  Whereas GSAP is very complex, Anime.s is simpler and more light weight which means it is perfect to create small animations such as loop, delay or reverse. 
+
+        </p>
+		</article>
+
+		<h1>SVG</h1>
+        <figure>
+          <img src="Screenshot 2025-09-22 at 09.16.31.png"
+               alt="Front Matter in Jekyll"
+               width="640" height="360" />
+			
+          <figcaption>Front Matter in Jekyll</figcaption>
+        </figure>
+        <p>
+          <strong>Notes:</strong>
+
+		 Another feature that I found interesting is the posibility of animating SVGs which can be very useful to add interactivity to the logos and icons of your webpage. Within this feature there are several options such as morphTo(), to morph one SVG into another or the otionPath() to animate the SVG along a specified path.
+Additionally I really like how the website of Anime.js animates sections to showcase each feature, making it more appealing and easy to understand. 
+        </p>
+		</article>
+
+		 <article>
+        <h3>Comparison</h3>
+		<h1>My choice</h1>
+        
+          <strong></strong>
+
+          <p>
+    
+My choice of animation library will highly depend of the type of website I want to build. If I want more complex animations I would definitely choose GSAP, although I would have to consider both the learning difficulty and the heavier weight it adds to the page, which involves more loading time. However, if I want to create simpler and smalller animations, which result in a more lightweight webpage, I would choose Anime.js. 
+        </p>
+ 
+
+	  </article>
     </section>
 
     <!-- SECTION 5 -->
